@@ -47,3 +47,9 @@ ACL: "Listas de control de acceso". Access Control Lists (ACLs) son mecanismos d
 
 Grupos de seguridad: "Firewall". Los grupos de seguridad son conjuntos de reglas de firewall que controlan el tráfico entrante y saliente hacia las instancias EC2, proporcionando una capa adicional de seguridad.
 
+Auri, Puri, Nuri: Modelo de reserva de instancias en AWS. Auri (Aurora Reserved Instances)Las instancias reservadas con pago total anticipado (AURI)  mayor descuento
+Las instancias reservadas con pago parcial anticipado (PURI) descuentos más bajos
+Las instancias reservadas sin pago anticipado (NURI) descuentos aún menores
+ se refiere a instancias reservadas de Amazon Aurora, Puri (Provisioned Reserved Instances) se refiere a instancias reservadas provisionadas, y Nuri (Non-Totally Reserved Instances) se refiere a instancias no son totalmente reservadas.
+
+ 
