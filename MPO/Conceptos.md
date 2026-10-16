@@ -52,4 +52,17 @@ Las instancias reservadas con pago parcial anticipado (PURI) descuentos más baj
 Las instancias reservadas sin pago anticipado (NURI) descuentos aún menores
  se refiere a instancias reservadas de Amazon Aurora, Puri (Provisioned Reserved Instances) se refiere a instancias reservadas provisionadas, y Nuri (Non-Totally Reserved Instances) se refiere a instancias no son totalmente reservadas.
 
+ Well-Architected: "como si le pregunto a mi profe cómo tengo que hacerlo" es un conjunto de buenas prácticas y principios que ayudan a los arquitectos de soluciones a diseñar, construir y mantener aplicaciones en la nube de manera eficiente, segura y escalable. El marco se basa en cinco pilares fundamentales.
+
  
+## Laboratorio IAM <img src="img/images.jpg" height="50"  alt="IAM Lab">
+
+Usuarios: personas que acceden a los recursos de la nube.
+
+Políticas: permisos de acceso a recursos.
+
+Grupos: añadimos unas políticas a un grupo y añadimos usuarios al grupo. Los usuarios heredan las políticas del grupo.
+
+Roles: un rol es un conjunto de permisos que se pueden asignar a un usuario o servicio para que pueda acceder a recursos específicos. Los roles son útiles para delegar permisos sin necesidad de compartir credenciales.
+
+
