@@ -1,0 +1,98 @@
+/* VARIABLES */
+.boton {
+  background-color: #bfff00;
+  color: white;
+}
+
+/* ANIDAMIENTO */
+.menu {
+  background-color: #f01f1f;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton {
+  background-color: blue;
+}
+.boton:hover {
+  background-color: aquamarine;
+}
+
+/* MIXINS */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-info {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+.tarjeta-error {
+  background-color: rgb(204, 12, 12);
+  padding: 0px;
+  margin: 5px;
+}
+
+/* HERENCIA */
+.alerta, .error {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  background-color: rgb(245, 9, 9);
+}
+
+/*OPERACIONES */
+.caja {
+  width: 50px;
+}
+
+.caja2 {
+  width: 150px;
+}
+
+/* CONDICIONALES */
+body {
+  background: black;
+  color: whitesmoke;
+}
+
+/* BUCLE */
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+/* TODO JUNTO*/
+.carta {
+  background-color: azure;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.carta h3 {
+  color: #004488;
+}
+
+button {
+  background-color: #004488;
+  color: white;
+}
+button:hover {
+  background: #012142;
+}
+
+/*# sourceMappingURL=001.css.map */

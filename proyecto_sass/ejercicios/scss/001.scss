@@ -1,0 +1,124 @@
+/* VARIABLES */
+
+$color-principal: #bfff00;
+
+.boton {
+  background-color: $color-principal;
+  color: white;
+}
+
+/* ANIDAMIENTO */
+
+.menu {
+  background-color: #f01f1f;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.boton {
+  background-color: blue;
+
+  &:hover {
+    background-color: aquamarine;
+  }
+}
+
+/* MIXINS */
+
+@mixin centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  @include centrar;
+}
+
+@mixin tarjeta($color, $padding, $margin) {
+  background-color: $color;
+  padding: $padding;
+  margin: $margin;
+}
+
+.tarjeta-info {
+  @include tarjeta(lightblue, 20px, 10px);
+}
+
+.tarjeta-error {
+  @include tarjeta(rgb(204, 12, 12), 0px, 5px);
+}
+/* HERENCIA */
+
+.alerta {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  @extend .alerta;
+  background-color: rgb(245, 9, 9);
+}
+
+/*OPERACIONES */
+
+$ancho: 100px;
+
+.caja {
+  width: $ancho * 0.5;
+}
+
+.caja2 {
+  width: $ancho + 50px;
+}
+
+/* CONDICIONALES */
+
+$modo-oscuro: true;
+
+body {
+  @if $modo-oscuro {
+    background: black;
+    color: whitesmoke;
+  } @else {
+    background: white;
+    color: black;
+  }
+}
+
+/* BUCLE */
+
+@for $i from 1 through 3 {
+  .m-#{$i} {
+    margin: #{$i * 10}px;
+  }
+}
+
+/* TODO JUNTO*/
+
+$color-primario: #004488;
+
+@mixin sombra {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carta {
+  background-color: azure;
+  padding: 20px;
+  @include sombra;
+  h3 {
+    color: $color-primario;
+  }
+}
+
+button {
+  background-color: $color-primario;
+  color: white;
+
+  &:hover {
+    background: #012142;
+  }
+}
